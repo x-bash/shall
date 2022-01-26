@@ -16,7 +16,6 @@ ___x_cmd_shall(){
     esac
 }
 
-
 # Section: try
 ___x_cmd_shall_try(){
     param:void
@@ -79,7 +78,6 @@ A
 }
 
 # EndSection
-
 
 # Section: utiles
 
