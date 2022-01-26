@@ -27,14 +27,18 @@ A
 
 # *sh-*awk
 ___x_cmd_shall_name(){
-    local IFS=,
-
     if [ "$#" -eq 0 ]; then
-        ___x_cmd_shall_name_basic
-        return
+        if [ -z "$PATTERN" ]; then
+            ___x_cmd_shall_name_basic
+            return
+        fi
+        local patstr="$PATTERN"
+    else
+        local IFS=,
+        local patstr="$*"
     fi
 
-    ___x_cmd_shall_name_all | awk -v patstr="$*" '
+    ___x_cmd_shall_name_all | awk -v patstr="$patstr" '
 BEGIN {
     gsub(/\*/, "[A-Za-z0-9\-]+", patstr)
     patl = split(patstr, pat, ",")
