@@ -1,6 +1,6 @@
 
 
-___x_cmd_dev_try_exausted(){
+___x_cmd_shall_try_exausted(){
     DOCKER_PLATFORM=linux/arm64
 
 # bash3
