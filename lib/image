@@ -47,46 +47,46 @@ ___x_cmd_shall_image(){
         ash)                printf "%s" xcmd/base-alpine-2-dev ;;
         dash)               printf "%s" xcmd/base-debian-2-dev ;;
 
-        busyawk-bash3)      printf "%s" bash:3 ;;
-        busyawk-bash4)      printf "%s" bash:4 ;;
-        busyawk-bash5)      printf "%s" bash:5 ;;
-        busyawk-zsh)        printf "%s" xcmd/base-alpine-2-dev ;;
-        busyawk-ksh)        printf "%s" xcmd/base-alpine-2-dev ;;
-        busyawk-ash)        printf "%s" xcmd/base-alpine-2-dev ;;
-        busyawk-dash)       printf "%s" xcmd/base-debian-2-dev ;;
+        bash3-busyawk)      printf "%s" bash:3 ;;
+        bash4-busyawk)      printf "%s" bash:4 ;;
+        bash5-busyawk)      printf "%s" bash:5 ;;
+        zsh-busyawk)        printf "%s" xcmd/base-alpine-2-dev ;;
+        ksh-busyawk)        printf "%s" xcmd/base-alpine-2-dev ;;
+        ash-busyawk)        printf "%s" xcmd/base-alpine-2-dev ;;
+        dash-busyawk)       printf "%s" xcmd/base-debian-2-dev ;;
 
 
-        gawk-bash3)         printf "%s" bash:3 ;;
-        gawk-bash4)         printf "%s" bash:4 ;;
-        gawk-bash5)         printf "%s" bash:5 ;;
-        gawk-zsh)           printf "%s" xcmd/base-alpine-2-dev ;;
-        gawk-ksh)           printf "%s" xcmd/base-alpine-2-dev ;;
-        gawk-ash)           printf "%s" xcmd/base-alpine-2-dev ;;
-        gawk-dash)          printf "%s" xcmd/base-debian-2-dev ;;
+        bash3-gawk)         printf "%s" bash:3 ;;
+        bash4-gawk)         printf "%s" bash:4 ;;
+        bash5-gawk)         printf "%s" bash:5 ;;
+        zsh-gawk)           printf "%s" xcmd/base-alpine-2-dev ;;
+        ksh-gawk)           printf "%s" xcmd/base-alpine-2-dev ;;
+        ash-gawk)           printf "%s" xcmd/base-alpine-2-dev ;;
+        dash-gawk)          printf "%s" xcmd/base-debian-2-dev ;;
 
-        mawk-bash3)         printf "%s" bash:3 ;;
-        mawk-bash4)         printf "%s" bash:4 ;;
-        mawk-bash5)         printf "%s" bash:5 ;;
-        mawk-zsh)           printf "%s" xcmd/base-alpine-2-dev ;;
-        mawk-ksh)           printf "%s" xcmd/base-alpine-2-dev ;;
-        mawk-ash)           printf "%s" xcmd/base-alpine-2-dev ;;
-        mawk-dash)          printf "%s" xcmd/base-debian-2-dev ;;
+        bash3-mawk)         printf "%s" bash:3 ;;
+        bash4-mawk)         printf "%s" bash:4 ;;
+        bash5-mawk)         printf "%s" bash:5 ;;
+        zsh-mawk)           printf "%s" xcmd/base-alpine-2-dev ;;
+        ksh-mawk)           printf "%s" xcmd/base-alpine-2-dev ;;
+        ash-mawk)           printf "%s" xcmd/base-alpine-2-dev ;;
+        dash-mawk)          printf "%s" xcmd/base-debian-2-dev ;;
 
-        nawk-bash3)         printf "%s" bash:3 ;;
-        nawk-bash4)         printf "%s" bash:4 ;;
-        nawk-bash5)         printf "%s" bash:5 ;;
-        nawk-zsh)           printf "%s" xcmd/base-alpine-2-dev ;;
-        nawk-ksh)           printf "%s" xcmd/base-alpine-2-dev ;;
-        nawk-ash)           printf "%s" xcmd/base-alpine-2-dev ;;
-        nawk-dash)          printf "%s" xcmd/base-debian-2-dev ;;
+        bash3-nawk)         printf "%s" bash:3 ;;
+        bash4-nawk)         printf "%s" bash:4 ;;
+        bash5-nawk)         printf "%s" bash:5 ;;
+        zsh-nawk)           printf "%s" xcmd/base-alpine-2-dev ;;
+        ksh-nawk)           printf "%s" xcmd/base-alpine-2-dev ;;
+        ash-nawk)           printf "%s" xcmd/base-alpine-2-dev ;;
+        dash-nawk)          printf "%s" xcmd/base-debian-2-dev ;;
 
-        bsdawk-bash3)       printf "%s" bash:3 ;;
-        bsdawk-bash4)       printf "%s" bash:4 ;;
-        bsdawk-bash5)       printf "%s" bash:5 ;;
-        bsdawk-zsh)         printf "%s" xcmd/base-alpine-2-dev ;;
-        bsdawk-ksh)         printf "%s" xcmd/base-alpine-2-dev ;;
-        bsdawk-ash)         printf "%s" xcmd/base-alpine-2-dev ;;
-        bsdawk-dash)        printf "%s" xcmd/base-debian-2-dev ;;
+        bash3-bsdawk)       printf "%s" bash:3 ;;
+        bash4-bsdawk)       printf "%s" bash:4 ;;
+        bash5-bsdawk)       printf "%s" bash:5 ;;
+        zsh-bsdawk)         printf "%s" xcmd/base-alpine-2-dev ;;
+        ksh-bsdawk)         printf "%s" xcmd/base-alpine-2-dev ;;
+        ash-bsdawk)         printf "%s" xcmd/base-alpine-2-dev ;;
+        dash-bsdawk)        printf "%s" xcmd/base-debian-2-dev ;;
 
         alpine-bash3)       printf "%s" bash:3 ;;
         alpine-bash4)       printf "%s" bash:4 ;;
@@ -96,40 +96,40 @@ ___x_cmd_shall_image(){
         alpine-ash)         printf "%s" xcmd/base-alpine-2-dev ;;
         alpine-dash)        printf "%s" xcmd/base-debian-2-dev ;;
 
-        debian-bash3)      printf "%s" bash:3 ;;
-        debian-bash4)      printf "%s" bash:4 ;;
-        debian-bash5)      printf "%s" bash:5 ;;
-        debian-zsh)        printf "%s" xcmd/base-alpine-2-dev ;;
-        debian-ksh)        printf "%s" xcmd/base-alpine-2-dev ;;
-        debian-ash)        printf "%s" xcmd/base-alpine-2-dev ;;
-        debian-dash)       printf "%s" xcmd/base-debian-2-dev ;;
+        debian-bash3)       printf "%s" bash:3 ;;
+        debian-bash4)       printf "%s" bash:4 ;;
+        debian-bash5)       printf "%s" bash:5 ;;
+        debian-zsh)         printf "%s" xcmd/base-alpine-2-dev ;;
+        debian-ksh)         printf "%s" xcmd/base-alpine-2-dev ;;
+        debian-ash)         printf "%s" xcmd/base-alpine-2-dev ;;
+        debian-dash)        printf "%s" xcmd/base-debian-2-dev ;;
 
 
-        centos-bash3)      printf "%s" bash:3 ;;
-        centos-bash4)      printf "%s" bash:4 ;;
-        centos-bash5)      printf "%s" bash:5 ;;
-        centos-zsh)        printf "%s" xcmd/base-alpine-2-dev ;;
-        centos-ksh)        printf "%s" xcmd/base-alpine-2-dev ;;
-        centos-ash)        printf "%s" xcmd/base-alpine-2-dev ;;
-        centos-dash)       printf "%s" xcmd/base-debian-2-dev ;;
+        centos-bash3)       printf "%s" bash:3 ;;
+        centos-bash4)       printf "%s" bash:4 ;;
+        centos-bash5)       printf "%s" bash:5 ;;
+        centos-zsh)         printf "%s" xcmd/base-alpine-2-dev ;;
+        centos-ksh)         printf "%s" xcmd/base-alpine-2-dev ;;
+        centos-ash)         printf "%s" xcmd/base-alpine-2-dev ;;
+        centos-dash)        printf "%s" xcmd/base-debian-2-dev ;;
 
 
-        gentoo-bash3)      printf "%s" bash:3 ;;
-        gentoo-bash4)      printf "%s" bash:4 ;;
-        gentoo-bash5)      printf "%s" bash:5 ;;
-        gentoo-zsh)        printf "%s" xcmd/base-alpine-2-dev ;;
-        gentoo-ksh)        printf "%s" xcmd/base-alpine-2-dev ;;
-        gentoo-ash)        printf "%s" xcmd/base-alpine-2-dev ;;
-        gentoo-dash)       printf "%s" xcmd/base-debian-2-dev ;;
+        gentoo-bash3)       printf "%s" bash:3 ;;
+        gentoo-bash4)       printf "%s" bash:4 ;;
+        gentoo-bash5)       printf "%s" bash:5 ;;
+        gentoo-zsh)         printf "%s" xcmd/base-alpine-2-dev ;;
+        gentoo-ksh)         printf "%s" xcmd/base-alpine-2-dev ;;
+        gentoo-ash)         printf "%s" xcmd/base-alpine-2-dev ;;
+        gentoo-dash)        printf "%s" xcmd/base-debian-2-dev ;;
 
 
-        arch-bash3)      printf "%s" bash:3 ;;
-        arch-bash4)      printf "%s" bash:4 ;;
-        arch-bash5)      printf "%s" bash:5 ;;
-        arch-zsh)        printf "%s" xcmd/base-alpine-2-dev ;;
-        arch-ksh)        printf "%s" xcmd/base-alpine-2-dev ;;
-        arch-ash)        printf "%s" xcmd/base-alpine-2-dev ;;
-        arch-dash)       printf "%s" xcmd/base-debian-2-dev ;;
+        arch-bash3)         printf "%s" bash:3 ;;
+        arch-bash4)         printf "%s" bash:4 ;;
+        arch-bash5)         printf "%s" bash:5 ;;
+        arch-zsh)           printf "%s" xcmd/base-alpine-2-dev ;;
+        arch-ksh)           printf "%s" xcmd/base-alpine-2-dev ;;
+        arch-ash)           printf "%s" xcmd/base-alpine-2-dev ;;
+        arch-dash)          printf "%s" xcmd/base-debian-2-dev ;;
 
     esac
 }
