@@ -1,4 +1,4 @@
-
+# shellcheck shell=sh disable=SC2039,3043
 
 ___x_cmd_shall_try_exausted(){
     DOCKER_PLATFORM=linux/arm64

@@ -1,4 +1,4 @@
-
+# shellcheck shell=sh disable=SC2039,3043
 
 # *sh-*awk
 ___x_cmd_shall_name(){

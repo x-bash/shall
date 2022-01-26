@@ -1,3 +1,4 @@
+# shellcheck shell=sh disable=SC2039,3043
 
 # Section: get image
 
