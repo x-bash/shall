@@ -1,0 +1,30 @@
+
+# Section: get image
+
+___x_cmd_shall_get_ximage(){
+    case "$1" in
+        bash3)      printf "%s" bash:3 ;;   # inject curl
+        bash4)      printf "%s" bash:4 ;;   # inject curl
+        bash5)      printf "%s" xcmd/alpine-2-dev ;;
+        zsh)        printf "%s" xcmd/alpine-2-dev ;;
+        ksh)        printf "%s" xcmd/alpine-2-dev ;;
+        ash)        printf "%s" xcmd/alpine-2-dev ;;
+        dash)       printf "%s" xcmd/debian-2-dev ;;
+    esac
+}
+
+# Test inside ...
+# I think we should use posix shell compatible mode to do it...
+___x_cmd_shall_try_get_image(){
+    case "${1:?Provide fun}" in
+        bash3)      printf "%s" bash:3 ;;
+        bash4)      printf "%s" bash:4 ;;
+        bash5)      printf "%s" bash:5 ;;
+        zsh)        printf "%s" xcmd/base-alpine-2-dev ;;
+        ksh)        printf "%s" xcmd/base-alpine-2-dev ;;
+        ash)        printf "%s" xcmd/base-alpine-2-dev ;;
+        dash)       printf "%s" xcmd/base-debian-2-dev ;;
+    esac
+}
+
+# EndSection

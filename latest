@@ -1,43 +1,24 @@
-# shellcheck shell=sh
-# shellcheck disable=SC2039,3043
+# shellcheck shell=sh disable=SC2039,3043           # xrc
 
 # author:       Li Junhao           l@x-cmd.com
 
+xrc shall/lib/all
+xrc shall/lib/image
+
 ___x_cmd_shall(){
-    local op="${1}"
+    local op="${1}";
+    [ $# -gt 0 ] && shift
 
     case "$op" in
-        push)       ;;
-        pop)        ;;
-        cancel)     ;;
-        quote)      ;;
-        *)
-            trap "$@" ;;
+        all)    ___x_cmd_shall_all "$@" ;;
+        *)      ___x_cmd_shall_try "$op" "$@" ;;
     esac
-
 }
-
-
 
 
 ___x_cmd_shall_try(){
     param:void
     ___x_cmd_shall_try_posix "$@"
-}
-
-
-# Test inside ...
-# I think we should use posix shell compatible mode to do it...
-___x_cmd_shall_try_get_image(){
-    case "${1:?Provide fun}" in
-        bash3)      printf "%s" bash:3 ;;
-        bash4)      printf "%s" bash:4 ;;
-        bash5)      printf "%s" bash:5 ;;
-        zsh)        printf "%s" xcmd/base-alpine-2-dev ;;
-        ksh)        printf "%s" xcmd/base-alpine-2-dev ;;
-        ash)        printf "%s" xcmd/base-alpine-2-dev ;;
-        dash)       printf "%s" xcmd/base-debian-2-dev ;;
-    esac
 }
 
 # x dev try     =>      x dev try posix
@@ -107,11 +88,11 @@ A
             return 1
         }
 
-        trap 'printf "Interrputed.\n"; break ' SIGINT
-        trap 'printf "Interrputed.\n"; break ' SIGTERM
+        trap 'printf "Interrputed.\n"; break ' INT
+        trap 'printf "Interrputed.\n"; break ' TERM
 
         ___x_cmd_shall_try_get_shell_to_test | {
-            trap 'printf "Interrputed.\n"; break ' SIGINT
+            trap 'printf "Interrputed.\n"; break ' INT
 
             while read -r SHELL || echo err; do
 
@@ -130,7 +111,7 @@ A
         }
         return
     else
-        trap 'printf "Interrputed.\n"; break ' SIGINT
+        trap 'printf "Interrputed.\n"; break ' INT
         ___x_cmd_shall_try_get_shell_to_test | while read -r SHELL; do
             printf "\n%s\n%s: %s\n" "--------------------" "Trying" "$SHELL"
             ___x_cmd_shall_try_script "$SHELL" "$@"
@@ -140,7 +121,7 @@ A
                 return 255
             fi
         done
-        trap - SIGINT
+        trap - INT
     fi
 
 }
@@ -152,22 +133,5 @@ ___x_cmd_shall_try_posix(){
 # EndSection
 
 
-# Section: for test
-
-___x_cmd_shall_get_ximage(){
-    case "$1" in
-        bash3)      printf "%s" bash:3 ;;   # inject curl
-        bash4)      printf "%s" bash:4 ;;   # inject curl
-        bash5)      printf "%s" xcmd/alpine-2-dev ;;
-        zsh)        printf "%s" xcmd/alpine-2-dev ;;
-        ksh)        printf "%s" xcmd/alpine-2-dev ;;
-        ash)        printf "%s" xcmd/alpine-2-dev ;;
-        dash)       printf "%s" xcmd/debian-2-dev ;;
-    esac
-}
-# EndSection
-
-
-
-
+xrc setmain ___x_cmd_shall
 
