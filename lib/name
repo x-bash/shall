@@ -3,6 +3,7 @@
 # *sh-*awk
 ___x_cmd_shall_name(){
     if [ "$#" -eq 0 ]; then
+        local USE="${___X_CMD_SHALL_USE:-"$USE"}"
         if [ -z "$USE" ]; then
             ___x_cmd_shall_name_basic
             return
