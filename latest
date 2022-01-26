@@ -7,14 +7,7 @@ xrc shall/lib/image
 xrc shall/lib/name
 
 ___x_cmd_shall(){
-    local op="${1}";
-    [ $# -gt 0 ] && shift
-
-    case "$op" in
-        # We may not use all ...
-        all)    ___x_cmd_shall_all "$@" ;;
-        *)      ___x_cmd_shall_try "$op" "$@" ;;
-    esac
+    ___x_cmd_shall_try "$@"
 }
 
 # Section: try
