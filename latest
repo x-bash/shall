@@ -10,6 +10,7 @@ ___x_cmd_shall(){
     [ $# -gt 0 ] && shift
 
     case "$op" in
+        # We may not use all ...
         all)    ___x_cmd_shall_all "$@" ;;
         *)      ___x_cmd_shall_try "$op" "$@" ;;
     esac
@@ -19,6 +20,10 @@ ___x_cmd_shall(){
 ___x_cmd_shall_try(){
     param:void
     ___x_cmd_shall_try_posix "$@"
+}
+
+___x_cmd_shall_try_posix(){
+    ___x_cmd_shall_try_script_all "$@"
 }
 
 # x dev try     =>      x dev try posix
@@ -36,7 +41,7 @@ ___x_cmd_shall_try_exec(){
         docker run -i "$image" "$actual_name"
 }
 
-___x_cmd_shall_try_get_shell_to_test(){
+___x_cmd_shall_image_name(){
     cat <<A
 bash3
 bash4
@@ -91,13 +96,12 @@ A
         trap 'printf "Interrputed.\n"; break ' INT
         trap 'printf "Interrputed.\n"; break ' TERM
 
-        ___x_cmd_shall_try_get_shell_to_test | {
+        ___x_cmd_shall_image_name | {
             trap 'printf "Interrputed.\n"; break ' INT
 
             while read -r SHELL || echo err; do
-
-                echo "trap"
-                trap -p SIGINT
+                # echo "trap"
+                # trap -p INT
 
                 printf "\n%s\n%s: %s\n" "--------------------" "Trying" "$SHELL" >&2
                 printf "%s" "$script" | ___x_cmd_shall_try_script "$SHELL"
@@ -112,7 +116,7 @@ A
         return
     else
         trap 'printf "Interrputed.\n"; break ' INT
-        ___x_cmd_shall_try_get_shell_to_test | while read -r SHELL; do
+        ___x_cmd_shall_image_name | while read -r SHELL; do
             printf "\n%s\n%s: %s\n" "--------------------" "Trying" "$SHELL"
             ___x_cmd_shall_try_script "$SHELL" "$@"
             code=$?
@@ -124,10 +128,6 @@ A
         trap - INT
     fi
 
-}
-
-___x_cmd_shall_try_posix(){
-    ___x_cmd_shall_try_script_all "$@"
 }
 
 # EndSection
