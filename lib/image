@@ -47,6 +47,47 @@ ___x_cmd_shall_image(){
         ash)                printf "%s" xcmd/base-alpine-2-dev ;;
         dash)               printf "%s" xcmd/base-debian-2-dev ;;
 
+        gawk-bash3)         printf "%s" bash:3 ;;
+        gawk-bash4)         printf "%s" bash:4 ;;
+        gawk-bash5)         printf "%s" bash:5 ;;
+        gawk-zsh)           printf "%s" xcmd/base-alpine-2-dev ;;
+        gawk-ksh)           printf "%s" xcmd/base-alpine-2-dev ;;
+        gawk-ash)           printf "%s" xcmd/base-alpine-2-dev ;;
+        gawk-dash)          printf "%s" xcmd/base-debian-2-dev ;;
+
+        mawk-bash3)         printf "%s" bash:3 ;;
+        mawk-bash4)         printf "%s" bash:4 ;;
+        mawk-bash5)         printf "%s" bash:5 ;;
+        mawk-zsh)           printf "%s" xcmd/base-alpine-2-dev ;;
+        mawk-ksh)           printf "%s" xcmd/base-alpine-2-dev ;;
+        mawk-ash)           printf "%s" xcmd/base-alpine-2-dev ;;
+        mawk-dash)          printf "%s" xcmd/base-debian-2-dev ;;
+
+        nawk-bash3)         printf "%s" bash:3 ;;
+        nawk-bash4)         printf "%s" bash:4 ;;
+        nawk-bash5)         printf "%s" bash:5 ;;
+        nawk-zsh)           printf "%s" xcmd/base-alpine-2-dev ;;
+        nawk-ksh)           printf "%s" xcmd/base-alpine-2-dev ;;
+        nawk-ash)           printf "%s" xcmd/base-alpine-2-dev ;;
+        nawk-dash)          printf "%s" xcmd/base-debian-2-dev ;;
+
+
+        busyawk-bash3)      printf "%s" bash:3 ;;
+        busyawk-bash4)      printf "%s" bash:4 ;;
+        busyawk-bash5)      printf "%s" bash:5 ;;
+        busyawk-zsh)        printf "%s" xcmd/base-alpine-2-dev ;;
+        busyawk-ksh)        printf "%s" xcmd/base-alpine-2-dev ;;
+        busyawk-ash)        printf "%s" xcmd/base-alpine-2-dev ;;
+        busyawk-dash)       printf "%s" xcmd/base-debian-2-dev ;;
+
+        bsdawk-bash3)       printf "%s" bash:3 ;;
+        bsdawk-bash4)       printf "%s" bash:4 ;;
+        bsdawk-bash5)       printf "%s" bash:5 ;;
+        bsdawk-zsh)         printf "%s" xcmd/base-alpine-2-dev ;;
+        bsdawk-ksh)         printf "%s" xcmd/base-alpine-2-dev ;;
+        bsdawk-ash)         printf "%s" xcmd/base-alpine-2-dev ;;
+        bsdawk-dash)        printf "%s" xcmd/base-debian-2-dev ;;
+
         alpine-bash3)       printf "%s" bash:3 ;;
         alpine-bash4)       printf "%s" bash:4 ;;
         alpine-bash5)       printf "%s" bash:5 ;;
