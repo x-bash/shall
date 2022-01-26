@@ -47,6 +47,15 @@ ___x_cmd_shall_image(){
         ash)                printf "%s" xcmd/base-alpine-2-dev ;;
         dash)               printf "%s" xcmd/base-debian-2-dev ;;
 
+        busyawk-bash3)      printf "%s" bash:3 ;;
+        busyawk-bash4)      printf "%s" bash:4 ;;
+        busyawk-bash5)      printf "%s" bash:5 ;;
+        busyawk-zsh)        printf "%s" xcmd/base-alpine-2-dev ;;
+        busyawk-ksh)        printf "%s" xcmd/base-alpine-2-dev ;;
+        busyawk-ash)        printf "%s" xcmd/base-alpine-2-dev ;;
+        busyawk-dash)       printf "%s" xcmd/base-debian-2-dev ;;
+
+
         gawk-bash3)         printf "%s" bash:3 ;;
         gawk-bash4)         printf "%s" bash:4 ;;
         gawk-bash5)         printf "%s" bash:5 ;;
@@ -70,15 +79,6 @@ ___x_cmd_shall_image(){
         nawk-ksh)           printf "%s" xcmd/base-alpine-2-dev ;;
         nawk-ash)           printf "%s" xcmd/base-alpine-2-dev ;;
         nawk-dash)          printf "%s" xcmd/base-debian-2-dev ;;
-
-
-        busyawk-bash3)      printf "%s" bash:3 ;;
-        busyawk-bash4)      printf "%s" bash:4 ;;
-        busyawk-bash5)      printf "%s" bash:5 ;;
-        busyawk-zsh)        printf "%s" xcmd/base-alpine-2-dev ;;
-        busyawk-ksh)        printf "%s" xcmd/base-alpine-2-dev ;;
-        busyawk-ash)        printf "%s" xcmd/base-alpine-2-dev ;;
-        busyawk-dash)       printf "%s" xcmd/base-debian-2-dev ;;
 
         bsdawk-bash3)       printf "%s" bash:3 ;;
         bsdawk-bash4)       printf "%s" bash:4 ;;
