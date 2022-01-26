@@ -4,6 +4,7 @@
 
 xrc shall/lib/all
 xrc shall/lib/image
+xrc shall/lib/name
 
 ___x_cmd_shall(){
     local op="${1}";
