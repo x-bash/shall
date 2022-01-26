@@ -13,7 +13,7 @@ ___x_cmd_shall_get_ximage(){
     esac
 }
 
-___x_cmd_shall_image_name(){
+___x_cmd_shall_name(){
     cat <<A
 bash3
 bash4
@@ -25,11 +25,11 @@ ksh
 A
 }
 
-___x_cmd_shall_image_name_all(){
+___x_cmd_shall_name_all(){
     local i
     local line
     for i in alpine debian centos gentoo arch; do
-        ___x_cmd_shall_image_name | while read -r line; do
+        ___x_cmd_shall_name | while read -r line; do
             printf "%s-%s\n" "$i" "$line"
         done
     done
@@ -37,7 +37,7 @@ ___x_cmd_shall_image_name_all(){
 
 # Test inside ...
 # I think we should use posix shell compatible mode to do it...
-___x_cmd_shall_try_get_image(){
+___x_cmd_shall_image(){
     case "${1:?Provide fun}" in
         bash3)              printf "%s" bash:3 ;;
         bash4)              printf "%s" bash:4 ;;
