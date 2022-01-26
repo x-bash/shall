@@ -3,11 +3,11 @@
 # *sh-*awk
 ___x_cmd_shall_name(){
     if [ "$#" -eq 0 ]; then
-        if [ -z "$PATTERN" ]; then
+        if [ -z "$USE" ]; then
             ___x_cmd_shall_name_basic
             return
         fi
-        local patstr="$PATTERN"
+        local patstr="$USE"
     else
         local IFS=,
         local patstr="$*"
