@@ -1,10 +1,7 @@
-# shellcheck shell=sh disable=SC2039,3043           # xrc
+# Author:       Li Junhao                           l@x-cmd.com
+# shellcheck    shell=sh disable=SC2039,3043        # xrc
 
-# author:       Li Junhao           l@x-cmd.com
-
-xrc shall/lib/all
-xrc shall/lib/image
-xrc shall/lib/name
+xrc:mod:lib shall       all image name
 
 ___x_cmd_shall(){
     ___x_cmd_shall_try "$@"
