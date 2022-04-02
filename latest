@@ -1,5 +1,5 @@
-# Author:       Li Junhao                           l@x-cmd.com
-# shellcheck    shell=sh disable=SC2039,3043        # xrc
+# Author:       Li Junhao                       l@x-cmd.com     # xrc
+# shellcheck    shell=sh disable=SC2039,3043
 
 xrc:mod:lib shall       all image name try
 
