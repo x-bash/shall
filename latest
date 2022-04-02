@@ -1,7 +1,7 @@
 # Author:       Li Junhao                           l@x-cmd.com
 # shellcheck    shell=sh disable=SC2039,3043        # xrc
 
-xrc:mod:lib shall       all image name
+xrc:mod:lib shall       all image name try
 
 ___x_cmd_shall(){
     ___x_cmd_shall_try "$@"
