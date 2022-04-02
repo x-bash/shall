@@ -4,7 +4,17 @@
 xrc:mod:lib shall       all image name try
 
 ___x_cmd_shall(){
-    ___x_cmd_shall_try "$@"
+    case "$1" in
+        ""|help)        printf "TODO: help" >&2  ;;
+
+        image)          shift; ___x_cmd_shall_image "$@" ;;
+        ximage)         shift; ___x_cmd_shall_get_ximage "$@" ;;
+
+        try)            shift; ___x_cmd_shall_try "$@" ;;
+        *)              ___x_cmd_shall_try "$@"
+    esac
+
+
 }
 
 xrc setmain ___x_cmd_shall
